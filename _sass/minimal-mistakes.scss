@@ -40,3 +40,8 @@
 @import "minimal-mistakes/print";
 
   
+body {
+    background-image: url('../files/background.jpg'); /* Adjust path if needed */
+    background-size: cover;
+    background-repeat: no-repeat;
+}
