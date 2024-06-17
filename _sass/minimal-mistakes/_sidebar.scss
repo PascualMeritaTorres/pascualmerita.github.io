@@ -117,15 +117,13 @@
   .author__avatar {
     display: table-cell;
     vertical-align: top;
-    width: 36px;
-    height: 36px;
 
     img {
-      width: 180px;        /* Maintain a specific width on larger screens */
-      height: 180px;       /* Maintain the same value for height to keep it square */
-      object-fit: cover;   /* This makes the image cover the space without stretching */
-      border-radius: 50%;  /* This will make the image round */
-      margin: auto;
+      width: 180px;          /* Set a specific width for large screens */
+      height: 180px;         /* Set the same value for height to make it square */
+      object-fit: cover;     /* This makes the image cover the space without stretching */
+      border-radius: 50%;    /* This will make the image round */
+      margin: auto;          /* Center the image within the cell */
     }
 
     @include breakpoint($large) {
@@ -134,31 +132,33 @@
       height: auto;
 
       img {
-        width: 100%;       /* Full container width on larger screens */
-        height: auto;      /* Adjust height automatically */
+        width: 100%;         /* Full container width on larger screens */
+        height: auto;        /* Adjust height automatically to maintain aspect ratio */
+        max-width: 180px;    /* Maximum width to maintain a reasonable size */
       }
     }
 
     @include breakpoint(max-width $small) {
       display: block;
-      width: 100%;         /* Use full container width on small screens */
+      width: 100%;           /* Use full container width on small screens */
       height: auto;
 
       img {
-        width: 100px;      /* Smaller fixed width for small screens */
-        height: 100px;     /* Maintain aspect ratio */
-        margin: 0 auto;    /* Center the image horizontally */
+        width: 120px;        /* Scaled down width for small screens */
+        height: 120px;       /* Same value for height to maintain the circle shape */
+        margin: 0 auto;      /* Center the image horizontally */
       }
     }
   }
 
-  /* Additional responsive adjustments for mobile viewing */
-  @media (max-width: 768px) {
+  /* Further adjustments for smaller mobile devices */
+  @media (max-width: 480px) {
     .author__avatar img {
-      width: 80px;         /* Even smaller size for very small devices */
-      height: 80px;
+      width: 100px;          /* Smaller fixed width for very small devices */
+      height: 100px;         /* Maintain the square to keep the round shape */
     }
   }
+
 
   
   .author__content {
