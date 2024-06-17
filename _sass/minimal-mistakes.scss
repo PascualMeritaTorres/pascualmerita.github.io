@@ -38,3 +38,10 @@
 @import "minimal-mistakes/archive";
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
+
+/* Custom Background Image */
+body {
+    background: url('../assets/images/background.jpg') no-repeat center center fixed;
+    background-size: cover;
+  }
+  

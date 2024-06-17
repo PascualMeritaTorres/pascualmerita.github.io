@@ -3,9 +3,12 @@ main:
     url: /
   - title: "Past Projects"
     url: /past_projects/
+
   - title: "Talks/Awards"
-    url: /talks/
+    url: /404/
+
   - title: "Ideas"
-    url: /talks/
+    url: /404/
+
   - title: "Resume"
     url: /files/cv.pdf 
