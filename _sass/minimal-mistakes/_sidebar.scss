@@ -112,26 +112,54 @@
      Author profile and links
      ========================================================================== */
   
+  /* _sass/minimal-mistakes/_sidebar.scss */
+
   .author__avatar {
     display: table-cell;
     vertical-align: top;
     width: 36px;
     height: 36px;
-  
-    @include breakpoint($large) {
-      display: block;
-      width: auto;
-      height: auto;
-    }
-  
+
     img {
-      width: 180px;        /* Set a specific width */
-      height: 180px;       /* Set the same value for height to make it square */
+      width: 180px;        /* Maintain a specific width on larger screens */
+      height: 180px;       /* Maintain the same value for height to keep it square */
       object-fit: cover;   /* This makes the image cover the space without stretching */
       border-radius: 50%;  /* This will make the image round */
       margin: auto;
     }
+
+    @include breakpoint($large) {
+      display: block;
+      width: auto;
+      height: auto;
+
+      img {
+        width: 100%;       /* Full container width on larger screens */
+        height: auto;      /* Adjust height automatically */
+      }
+    }
+
+    @include breakpoint(max-width $small) {
+      display: block;
+      width: 100%;         /* Use full container width on small screens */
+      height: auto;
+
+      img {
+        width: 100px;      /* Smaller fixed width for small screens */
+        height: 100px;     /* Maintain aspect ratio */
+        margin: 0 auto;    /* Center the image horizontally */
+      }
+    }
   }
+
+  /* Additional responsive adjustments for mobile viewing */
+  @media (max-width: 768px) {
+    .author__avatar img {
+      width: 80px;         /* Even smaller size for very small devices */
+      height: 80px;
+    }
+  }
+
   
   .author__content {
     display: table-cell;
