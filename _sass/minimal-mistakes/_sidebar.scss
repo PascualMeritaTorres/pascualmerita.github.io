@@ -113,38 +113,39 @@
      ========================================================================== */
   
   .author__avatar {
-    width: 100%;         /* Takes the full width of its parent to help center the image */
-    display: flex;       /* Use flexbox to center content */
-    flex-direction: column; /* Arrange items vertically */
-    align-items: center; /* Center items horizontally */
-    text-align: center;  /* Center text */
-    margin: auto;        /* Optionally, auto margins for further horizontal centering if needed */
+    display: flex;            /* Use flexbox for layout */
+    flex-direction: column;   /* Stack items vertically */
+    align-items: center;      /* Center items horizontally */
+    justify-content: center;  /* Center items vertically */
+    text-align: center;       /* Center text */
+    margin: auto;             /* Center the container itself */
+    width: 100%;              /* Full width of the parent container */
   
     img {
-      width: 180px;        /* Fixed width for larger screens */
-      height: 180px;       /* Fixed height to maintain aspect ratio */
-      object-fit: cover;   /* Ensures the image covers the area without stretching */
-      border-radius: 50%;  /* Rounds the corners to make the image circular */
-      margin: 0 auto;      /* Center the image horizontally */
+      width: 180px;           /* Fixed width for larger screens */
+      height: 180px;          /* Fixed height to maintain aspect ratio */
+      object-fit: cover;      /* Ensures the image covers the area without stretching */
+      border-radius: 50%;     /* Rounds the corners to make the image circular */
+      margin: 0 auto;         /* Center the image horizontally */
     }
   
     @include breakpoint($large) {
       img {
-        width: 180px;     /* Maintain a fixed size on larger screens */
+        width: 180px;         /* Maintain a fixed size on larger screens */
         height: 180px;
       }
     }
   
     @include breakpoint(max-width $medium) {
       img {
-        width: 150px;     /* Adjust size for medium screens */
+        width: 150px;         /* Adjust size for medium screens */
         height: 150px;
       }
     }
   
     @include breakpoint(max-width $small) {
       img {
-        width: 120px;     /* Adjust size for small screens */
+        width: 120px;         /* Adjust size for small screens */
         height: 120px;
       }
     }
@@ -153,21 +154,21 @@
   /* Additional adjustments for very small mobile devices */
   @media (max-width: 480px) {
     .author__avatar img {
-      width: 100px;       /* Further reduce the size for very small devices */
-      height: 100px;      /* Keep the height the same to maintain the round shape */
+      width: 100px;           /* Further reduce the size for very small devices */
+      height: 100px;          /* Keep the height the same to maintain the round shape */
     }
   }
   
   .author__content {
-    display: table-cell;
-    vertical-align: top;
-    padding-left: 15px;
-    padding-right: 25px;
+    display: flex;
+    flex-direction: column;  /* Stack items vertically */
+    align-items: center;     /* Center items horizontally */
+    justify-content: center; /* Center items vertically */
+    padding: 15px 25px;      /* Adjust padding */
+    text-align: center;      /* Center text */
     line-height: 1;
-    text-align: center; /* Center text */
   
     @include breakpoint($large) {
-      display: block;
       width: 85%;
       padding-left: 0;
       padding-right: 0;
@@ -204,9 +205,9 @@
   }
   
   .author__urls-wrapper {
-    position: relative;
-    display: table-cell;
-    vertical-align: middle;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
     font-family: $sans-serif;
     z-index: 10;
     position: relative;
