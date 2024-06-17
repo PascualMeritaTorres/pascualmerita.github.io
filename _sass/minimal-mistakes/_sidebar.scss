@@ -7,7 +7,6 @@
    ========================================================================== */
 
 .sidebar {
-  background-image: url('../files/background.jpg') !important; /* Adjust path if needed */
   @include clearfix();
   @include breakpoint(max-width $large) {
     /* fix z-index order of follow links */
