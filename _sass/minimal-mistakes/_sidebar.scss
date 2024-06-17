@@ -320,8 +320,11 @@
   background-color: transparent;
 }
 
-.masthead { /* replace .header with the actual class or ID of your header */
-  background-color: transparent;
+.masthead {
+  background-color: transparent !important;
+  border: 1px solid red; /* Remove this line after testing */
 }
+
+
 
 
