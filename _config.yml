@@ -13,49 +13,49 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Pascual Merita 
-minimal_mistakes_skin: "air" 
-search: true
+title: Pascual Merita
+minimal_mistakes_skin: "air"  # Defines the color scheme for the theme
+search: true  # Enable built-in search functionality
 
 # Build settings
-markdown: kramdown
-remote_theme: mmistakes/minimal-mistakes
+markdown: kramdown  # Markdown processor
+remote_theme: mmistakes/minimal-mistakes  # Theme used as a remote theme
 
 include:
-  - _pages
+  - _pages  # Include custom directories to be processed by Jekyll
 
 # Plugins (previously gems:)
 plugins:
-  - jekyll-paginate
-  - jekyll-sitemap
-  - jekyll-gist
-  - jekyll-feed
-  - jemoji
-  - jekyll-include-cache
+  - jekyll-paginate  # Pagination plugin
+  - jekyll-sitemap  # Sitemap generation plugin
+  - jekyll-gist  # Support for embedding Gists
+  - jekyll-feed  # RSS feed generation
+  - jemoji  # Emoji support plugin
+  - jekyll-include-cache  # Caches the rendering of Liquid include tags
 
 author:
-  name             : "Pascual Merita"
-  avatar           : "files/bio_photo.jpg"
-  bio              : ""
-  email            : pmeritatorres@gmail.com
-  location         : "Edinburgh, Scotland"
+  name: "Pascual Merita"
+  avatar: "files/bio_photo.jpg"  # Path to the author's avatar
+  bio: ""  # A short bio of the author
+  email: pmeritatorres@gmail.com
+  location: "Edinburgh, Scotland"  # The location of the author
   links:
-    - label: " Twitter"
+    - label: "Twitter"
       icon: "fab fa-fw fa-twitter-square"
       url: "https://x.com/PascualMerita"
-    - label: " GitHub"
+    - label: "GitHub"
       icon: "fab fa-fw fa-github"
       url: "https://github.com/PascualMeritaTorres"
-    - label: " Linkedin"
+    - label: "LinkedIn"
       icon: "fab fa-fw fa-linkedin"
       url: "https://www.linkedin.com/in/pascual-merita-torres/"
-    - label: " Email"
+    - label: "Email"
       icon: "fas fa-fw fa-envelope-square"
-      
+
 defaults:
   - scope:
-      path: "_pages"
+      path: "_pages"  # Default settings for pages in _pages directory
       type: pages
     values:
-      layout: single
-      author_profile: true
+      layout: single  # Default layout for pages
+      author_profile: true  # Show author profile by default on pages

@@ -1,3 +1,4 @@
+/* _sass/minimal-mistakes.scss */
 /* Variables */
 @import "minimal-mistakes/variables";
 
@@ -5,33 +6,33 @@
 @import "minimal-mistakes/vendor/breakpoint/breakpoint";
 @include breakpoint-set("to ems", true);
 @import "minimal-mistakes/vendor/magnific-popup/magnific-popup"; // Magnific Popup
-@import "minimal-mistakes/vendor/susy/susy";
-@import "minimal-mistakes/mixins";
+@import "minimal-mistakes/vendor/susy/susy"; // Susy for grid layout
+@import "minimal-mistakes/mixins"; // Various mixins used throughout
 
 /* Core CSS */
-@import "minimal-mistakes/reset";
-@import "minimal-mistakes/base";
-@import "minimal-mistakes/forms";
-@import "minimal-mistakes/tables";
-@import "minimal-mistakes/animations";
+@import "minimal-mistakes/reset"; // CSS reset for consistency across browsers
+@import "minimal-mistakes/base"; // Base styles for the theme
+@import "minimal-mistakes/forms"; // Styling for forms
+@import "minimal-mistakes/tables"; // Styling for tables
+@import "minimal-mistakes/animations"; // CSS animations
 
 /* Components */
-@import "minimal-mistakes/buttons";
-@import "minimal-mistakes/notices";
-@import "minimal-mistakes/masthead";
-@import "minimal-mistakes/navigation";
-@import "minimal-mistakes/footer";
-@import "minimal-mistakes/search";
-@import "minimal-mistakes/syntax";
+@import "minimal-mistakes/buttons"; // Button styles
+@import "minimal-mistakes/notices"; // Notices and alerts
+@import "minimal-mistakes/masthead"; // Masthead component
+@import "minimal-mistakes/navigation"; // Navigation styles
+@import "minimal-mistakes/footer"; // Footer component
+@import "minimal-mistakes/search"; // Search component styling
+@import "minimal-mistakes/syntax"; // Syntax highlighting for code
 
 /* Utility classes */
-@import "minimal-mistakes/utilities";
+@import "minimal-mistakes/utilities"; // Utility classes for spacing, text alignment, etc.
 
 /* Layout specific */
-@import "minimal-mistakes/page";
-@import "minimal-mistakes/archive";
-@import "minimal-mistakes/sidebar";
-@import "minimal-mistakes/print";
+@import "minimal-mistakes/page"; // Styles specific to pages
+@import "minimal-mistakes/archive"; // Styles for archive layouts
+@import "minimal-mistakes/sidebar"; // Styles for sidebars
+@import "minimal-mistakes/print"; // Print styles
 
 // Custom styles
-@import "custom";  // Import your custom stylesheet
+@import "custom";  // Import your custom stylesheet to override or extend the default styles

@@ -5,4 +5,8 @@ body {
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
+
+    @include breakpoint(max-width $medium) {
+        background-size: contain; // Adjust background to fit better on smaller screens
+    }
 }
