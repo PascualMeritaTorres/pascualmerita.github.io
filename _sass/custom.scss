@@ -1,0 +1,8 @@
+// _sass/custom.scss
+body {
+    background-image: url('/files/background.jpg');  // Ensure the path is correct
+    background-size: cover;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-attachment: fixed;
+}

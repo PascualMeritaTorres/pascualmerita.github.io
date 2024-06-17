@@ -33,11 +33,5 @@
 @import "minimal-mistakes/sidebar";
 @import "minimal-mistakes/print";
 
-/* Custom Site Styles */
-body {
-    background-image: url('/files/background.jpg');
-    background-size: cover;
-    background-position: center;
-    background-repeat: no-repeat;
-    background-attachment: fixed;
-}
+// Custom styles
+@import "custom";  // Import your custom stylesheet
