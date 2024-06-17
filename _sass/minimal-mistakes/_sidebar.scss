@@ -7,8 +7,11 @@
    ========================================================================== */
 
    .sidebar {
+    max-height: 65vh;
+    overflow-y: auto; // Adds scroll if content is larger than the container
     @include clearfix();
     @include breakpoint(max-width $large) {
+      max-height: 60vh; // Adjust based on smaller screen size specifics
       /* Responsive adjustments for mobile */
       width: 100%; // Use the full width for small screens
       position: relative;

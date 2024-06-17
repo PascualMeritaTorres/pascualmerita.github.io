@@ -1,12 +1,13 @@
 // _sass/custom.scss
 body {
-    background-image: url('/files/background.jpg');  // Ensure the path is correct
+    background-image: url('/files/background.jpg'); 
     background-size: cover;
     background-position: center;
     background-repeat: no-repeat;
     background-attachment: fixed;
 
     @include breakpoint(max-width $medium) {
-        background-size: contain; // Adjust background to fit better on smaller screens
+        background-size: contain;
+        background-position: center 20%; // Adjust as necessary to keep the transition visible
     }
 }
