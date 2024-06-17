@@ -112,52 +112,49 @@
      Author profile and links
      ========================================================================== */
   
-  /* _sass/minimal-mistakes/_sidebar.scss */
-
   .author__avatar {
-    display: table-cell;
-    vertical-align: top;
+    width: auto;
+    display: block;
+    text-align: center; // Center align the avatar within its container
 
     img {
-      width: 180px;          /* Set a specific width for large screens */
-      height: 180px;         /* Set the same value for height to make it square */
-      object-fit: cover;     /* This makes the image cover the space without stretching */
-      border-radius: 50%;    /* This will make the image round */
-      margin: auto;          /* Center the image within the cell */
+      width: 180px;       // Default width for large screens
+      height: 180px;      // Height equal to the width to maintain aspect ratio
+      object-fit: cover;  // Cover the space without stretching
+      border-radius: 50%; // Ensure the image is always round
+      margin: auto;       // Center the image
     }
 
     @include breakpoint($large) {
-      display: block;
-      width: auto;
-      height: auto;
-
       img {
-        width: 100%;         /* Full container width on larger screens */
-        height: auto;        /* Adjust height automatically to maintain aspect ratio */
-        max-width: 180px;    /* Maximum width to maintain a reasonable size */
+        width: 180px;     // Maintain a fixed size on larger screens
+        height: 180px;
+      }
+    }
+
+    @include breakpoint(max-width $medium) {
+      img {
+        width: 150px;     // Adjust size for medium screens
+        height: 150px;
       }
     }
 
     @include breakpoint(max-width $small) {
-      display: block;
-      width: 100%;           /* Use full container width on small screens */
-      height: auto;
-
       img {
-        width: 120px;        /* Scaled down width for small screens */
-        height: 120px;       /* Same value for height to maintain the circle shape */
-        margin: 0 auto;      /* Center the image horizontally */
+        width: 120px;     // Adjust size for small screens
+        height: 120px;
       }
     }
   }
 
-  /* Further adjustments for smaller mobile devices */
+  /* Additional adjustments for very small mobile devices */
   @media (max-width: 480px) {
     .author__avatar img {
-      width: 100px;          /* Smaller fixed width for very small devices */
-      height: 100px;         /* Maintain the square to keep the round shape */
+      width: 100px;       // Further reduce the size for very small devices
+      height: 100px;      // Keep the height the same to maintain the round shape
     }
   }
+
 
 
   
