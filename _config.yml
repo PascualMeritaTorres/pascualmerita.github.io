@@ -13,7 +13,7 @@
 # you will see them accessed via {{ site.title }}, {{ site.email }}, and so on.
 # You can create any custom variable you would like, and they will be accessible
 # in the templates via {{ site.myvariable }}.
-title: Piotr Nawrot 
+title: Pascual Merita 
 minimal_mistakes_skin: "air" 
 search: true
 
@@ -34,21 +34,21 @@ plugins:
   - jekyll-include-cache
 
 author:
-  name             : "Piotr Nawrot"
+  name             : "Pascual Merita"
   avatar           : "files/bio_photo.jpg"
   bio              : ""
-  email            : piotr.nawrot@ed.ac.uk 
+  email            : pmeritatorres@gmail.com
   location         : "Edinburgh, Scotland"
   links:
     - label: " Twitter"
       icon: "fab fa-fw fa-twitter-square"
-      url: "https://twitter.com/p_nawrot"
+      url: "https://x.com/PascualMerita"
     - label: " GitHub"
       icon: "fab fa-fw fa-github"
-      url: "https://github.com/PiotrNawrot"
+      url: "https://github.com/PascualMeritaTorres"
     - label: " Linkedin"
       icon: "fab fa-fw fa-linkedin"
-      url: "https://www.linkedin.com/in/piotr-nawrot/"
+      url: "https://www.linkedin.com/in/pascual-merita-torres/"
     - label: " Email"
       icon: "fas fa-fw fa-envelope-square"
       

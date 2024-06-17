@@ -1,10 +1,10 @@
 ---
 permalink: /
-title: "Home"
+title: "A bit about me"
 ---
 
-I am a first year PhD student with the UK Research & Innovation Centre for Doctoral Training in Natural Language Processing at the University of Edinburgh. I am fortunate to be supervised by [Edoardo Maria Ponti](https://ducdauge.github.io) and [Ivan Titov](http://ivan-titov.org). I am part of the [EdinburghNLP](https://edinburghnlp.inf.ed.ac.uk) group. 
+I am a Master's student in Artificial Intelligence at the University of Edinburgh. Currently, I am writing my thesis on 'Adaptive Pruning and Merging in Vision Transformers' under the supervision of [Dr. Edoardo Maria Ponti](https://ducdauge.github.io) and [Piotr Nawrot](https://piotrnawrot.github.io/). Thanks to them, I am slowly beginning to learn how to compare apples with apples (more on this here!)
 
-My research focuses on improving the efficiency and performance of neural models by hierarchical pooling. I am also interested in language grounding and multimodal learning.
+My interest in Computer Science began around the age of 15, when I started programming my own VST music plugins on Ableton. It was just basic stuff like filters and equalisers. However, I also implemented an RNN that took MIDI as input and generated the next note, and I guess we can say that's when my interest in AI began. I then moved to the UK to study Computer Science at King's College London, where I developed a "Content-based Music Recommendation System" for my thesis under the supervision of  [Dr. Jeroen Keppends](https://nms.kcl.ac.uk/jeroen.keppens/) and with guidance from [Dr. Timothy Greer](https://www.linkedin.com/in/timothy-greer-ph-d-28630671/).
 
-Previously, I obtained my Bachelor's degree in Computer Science from the University of Warsaw. I am grateful to [Henryk Michalewski](https://www.mimuw.edu.pl/~henrykm/resume.html) and [Łukasz Kaiser](https://scholar.google.com/citations?user=JWmiQR0AAAAJ&hl=en) for supervising my thesis. I also interned as AI researcher at [Meta AI](https://ai.facebook.com) in Paris, and as DL&Algo engineer at [Nvidia](https://www.nvidia.com/en-gb/) in Warsaw. Finally, I worked as a Student Researcher at the University of Wrocław, under the supervision of [Jan Chorowski](https://sites.google.com/a/cs.uni.wroc.pl/jch/home/about) and [Adrian Łańcucki](https://scholar.google.pl/citations?user=gydbYxkAAAAJ&hl=en).
+My heart still lies in the intersection of music and deep learning, but I am getting more and more interested in helping make generative AI more efficient. That is everything I think of nowadays.
