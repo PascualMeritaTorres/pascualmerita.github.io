@@ -114,8 +114,10 @@
   
   .author__avatar {
     width: 100%;         /* Takes the full width of its parent to help center the image */
-    display: block;      /* Ensures the container is block-level */
-    text-align: center;  /* Centers the image horizontally */
+    display: flex;       /* Use flexbox to center content */
+    flex-direction: column; /* Arrange items vertically */
+    align-items: center; /* Center items horizontally */
+    text-align: center;  /* Center text */
     margin: auto;        /* Optionally, auto margins for further horizontal centering if needed */
   
     img {
@@ -123,8 +125,7 @@
       height: 180px;       /* Fixed height to maintain aspect ratio */
       object-fit: cover;   /* Ensures the image covers the area without stretching */
       border-radius: 50%;  /* Rounds the corners to make the image circular */
-      margin: auto;        /* Ensures the image is centered within the container */
-      display: inline-block; /* Makes the image inline for text-align center to work */
+      margin: 0 auto;      /* Center the image horizontally */
     }
   
     @include breakpoint($large) {
@@ -163,6 +164,7 @@
     padding-left: 15px;
     padding-right: 25px;
     line-height: 1;
+    text-align: center; /* Center text */
   
     @include breakpoint($large) {
       display: block;
